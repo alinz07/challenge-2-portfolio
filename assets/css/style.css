@@ -74,3 +74,30 @@ header nav ul li {
     top: 78%;
     left: 62%;
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    color: var(--green);
+}
+
+.body-section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+    overflow-wrap: normal;
+}
+#about-me div {
+    width: 75%;
+    height:fit-content;
+}
+
+.section-title {
+    font-size: 60px;
+    text-align: right;
+    border-right: 5px solid var(--green);
+    width: 25%;
+    padding: 0 10px;
+}
