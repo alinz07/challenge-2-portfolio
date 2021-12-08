@@ -138,3 +138,20 @@ main {
     margin: 10px;
     position: relative;
 }
+.project-tiles nav {
+    position: absolute;
+    display: block;
+    background-color: var(--wood);
+    height: 80px;
+    width: fit-content;
+    margin: 40px 0 20px 0;
+    padding: 10px;   
+    line-height: 15px; 
+}
+.project-tiles nav h3 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+#main-tile nav {
+    margin: 290px 0 20px 0;
+}
