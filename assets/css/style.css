@@ -8,6 +8,8 @@
     --wood: #865c5e;
     --green: #4d934d;
     --white: #f5f5f5;
+    --pic-of-wood: url("../images/wood.jpg");
+    --round-border: 10px;
 }
 
 body {
@@ -25,14 +27,17 @@ header {
 }
 header h1 {
     /* maybe change bg color to bg img and have actual wood pic  */
-    background-color: var(--wood);
+    background-image: var(--pic-of-wood);
+    background-position: center;
+    background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     width: 30%;
-    padding: 0 10px 0 0;
+    padding: 10px;
     text-align: end;
     font-size: 50px;
-    height: 55px;
+    height: fit-content;
+    border-radius: var(--round-border);
     
 }
 header a {
@@ -62,7 +67,9 @@ header nav ul li {
 .hero p {
     /* transfer some of these properties to the header h1 for positioning the text in the container */
     position: absolute;
-    background-color: var(--wood);
+    background-image: var(--pic-of-wood);
+    background-position: center;
+    background-size: cover;
     display: flex;
     height: fit-content;
     width: fit-content;
@@ -73,6 +80,8 @@ header nav ul li {
     font-family: Georgia, 'Times New Roman', Times, serif;
     top: 78%;
     left: 62%;
+    border-radius: var(--round-border);
+    padding: 5px 10px;
 }
 
 main {
@@ -92,7 +101,8 @@ main {
 #about-me div {
     width: 75%;
     height: fit-content;
-    padding: 3px 25px;
+    padding: 10px 25px;
+    font-weight: bold;
 }
 
 .section-title {
@@ -137,6 +147,9 @@ main {
     border: 5px solid var(--wood);
     margin: 10px;
     position: relative;
+    background-image: var(--pic-of-wood);
+    background-position: center;
+    background-size: cover;
 }
 .project-tiles nav {
     position: absolute;
@@ -147,6 +160,8 @@ main {
     margin: 40px 0 20px 0;
     padding: 10px;   
     line-height: 15px; 
+    color: var(--white);
+    border-radius: 0 var(--round-border) var(--round-border) 0;
 }
 .project-tiles nav h3 {
     font-size: 25px;
@@ -154,4 +169,20 @@ main {
 }
 #main-tile nav {
     margin: 290px 0 20px 0;
+}
+
+#contact-info div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+
+#contact-info div a {
+        border-bottom: 5px solid var(--green);
+        text-decoration: none;
+        color: var(--green);
+        font-size: 20px;
+        padding: 10px;
 }
