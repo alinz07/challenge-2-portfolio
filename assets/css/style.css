@@ -1,9 +1,12 @@
+/* default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica,  Arial, sans-serif;
 }
 
+/* my variables for multiple instances of code  */
 :root {
     --wood: #865c5e;
     --green: #4d934d;
@@ -12,10 +15,7 @@
     --round-border: 10px;
 }
 
-body {
-    font-family: Helvetica,  Arial, sans-serif;
-}
-
+/* header and nav format  */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -26,7 +26,6 @@ header {
     height: 100px;
 }
 header h1 {
-    /* maybe change bg color to bg img and have actual wood pic  */
     background-image: var(--pic-of-wood);
     background-position: center;
     background-size: cover;
@@ -57,6 +56,7 @@ header nav ul li {
     margin: 0 10px;
 }
 
+/* format hero image and webpage cool subtitle  */
 .hero {
     background-image:url("../images/plants-reduces-stress.jpg");
     height: 300px;
@@ -65,17 +65,13 @@ header nav ul li {
     position: relative;
 }
 .hero p {
-    /* transfer some of these properties to the header h1 for positioning the text in the container */
     position: absolute;
     background-image: var(--pic-of-wood);
     background-position: center;
     background-size: cover;
     display: flex;
-    height: fit-content;
-    width: fit-content;
     color: var(--white);
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 2.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     top: 78%;
@@ -123,15 +119,24 @@ main {
     flex-wrap: wrap;
 }
 #main-tile {
-    background-image: url("../images/hero-bg.jpg");
-    background-position: center;
-    background-size: cover;
     position: relative;
     width: 100%;
     height: 400px;
     margin: 10px 30px 0;
     border: 5px solid var(--wood);
-
+}
+.project-img {
+    position: absolute;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+}
+.project-img:hover {
+    opacity: 1;
+}
+#main-tile nav {
+    margin: 290px 0 20px 0;
+    position: absolute;
 }
 .tile {
     width: 100%;
@@ -140,16 +145,12 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
 .tile div{
     height: 150px;
     width: 48.5%;
     border: 5px solid var(--wood);
     margin: 10px;
     position: relative;
-    background-image: var(--pic-of-wood);
-    background-position: center;
-    background-size: cover;
 }
 .project-tiles nav {
     position: absolute;
@@ -167,9 +168,6 @@ main {
     font-size: 25px;
     margin-top: 10px;
 }
-#main-tile nav {
-    margin: 290px 0 20px 0;
-}
 
 #contact-info div {
     display: flex;
@@ -185,4 +183,16 @@ main {
         color: var(--green);
         font-size: 20px;
         padding: 10px;
+}
+
+/* media queries for different screen sizes */
+@media screen and (max-width: 980px) {
+    /* 769px - 980px */
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 575px) {
+    
 }
