@@ -34,7 +34,7 @@ header h1 {
     width: 30%;
     padding: 10px;
     text-align: end;
-    font-size: 50px;
+    font-size: 60px;
     height: fit-content;
     border-radius: var(--round-border);
     
@@ -69,10 +69,9 @@ header nav ul li {
     background-image: var(--pic-of-wood);
     background-position: center;
     background-size: cover;
-    display: flex;
     color: var(--white);
     text-align: center;
-    font-size: 2.5em;
+    font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     top: 78%;
     left: 62%;
@@ -102,7 +101,7 @@ main {
 }
 
 .section-title {
-    font-size: 60px;
+    font-size: 4vw;
     text-align: right;
     border-right: 5px solid var(--green);
     width: 25%;
@@ -185,14 +184,83 @@ main {
         padding: 10px;
 }
 
-/* media queries for different screen sizes */
-@media screen and (max-width: 980px) {
-    /* 769px - 980px */
+/* media queries for screen less than 1800px */
 
+@media screen and (max-width: 1799px) {
+    header h1 {
+        font-size: 3.75vw;
+    }
+    .hero p {
+        font-size: 2.75vw;
+    }
 }
+
 @media screen and (max-width: 768px) {
-
-}
-@media screen and (max-width: 575px) {
-    
+    /* less than 768px  */
+    header{
+        justify-content: center;
+    }
+    header h1 {
+        margin: 10px;
+        text-align: center;
+    }
+    header nav ul {
+        margin-right: 0;
+        padding: 0;
+    }
+    header nav ul li {
+        font-size: 3vw;
+    }
+    .hero p {
+        width:fit-content;
+        top: 85%;
+        left: 25%;
+        font-size: 4vw;
+    }
+    main {
+        justify-content: center;
+    }
+    .section-title {
+        width: 50%;
+        text-align: center;
+        border-bottom: 5px solid var(--green);
+        border-right: none;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .body-section {
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+    .body-section div {
+        text-align: justify;
+        font-size: 2.25vw;
+    }
+    .project-tiles nav {
+        position: absolute;
+        margin: 0;
+        display: block;
+        background-color: var(--wood);
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;   
+        line-height: 15px; 
+        color: var(--white);
+        border-radius: 0 var(--round-border) var(--round-border) 0;
+    }
+    #main-tile {
+        height: 300px;
+    }
+    #main-tile nav {
+        margin: 0;
+    }
+    .tile div {
+        width: 100%;
+    }
+    #contact-info div {
+        width: 55%;
+    }
+    #contact-info div a {
+        margin: 10px;
+    }
 }
