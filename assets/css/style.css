@@ -144,12 +144,23 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-.tile div{
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.tile container div{
     height: 150px;
-    width: 48.4%;
+    width: 48.3%;
     border: 5px solid var(--wood);
-    margin: 10px;
     position: relative;
+}
+.left-tiles {
+    margin: 5px 5px 10px 10px;
+}
+.right-tiles {
+    margin: 5px 10px 10px 5px;
 }
 .project-tiles nav {
     position: absolute;
@@ -198,9 +209,9 @@ main {
     }
 }
 
-@media screen and (max-width: 1324px) {
-    .tile div {
-        width: 46.9%;
+@media screen and (max-width: 1288px) {
+    .tile container div {
+        width: 47.5%;
     }
 }
 
@@ -208,6 +219,7 @@ main {
     /* less than 768px  */
     header{
         justify-content: center;
+        height: fit-content;
     }
     header h1 {
         margin: 10px;
@@ -216,13 +228,14 @@ main {
     header nav ul {
         margin-right: 0;
         padding: 0;
+        margin-bottom: 10px;
     }
     header nav ul li {
         font-size: 3vw;
     }
     .hero p {
         width:fit-content;
-        top: 85%;
+        top: 80%;
         left: 25%;
         font-size: 4vw;
     }
@@ -263,8 +276,8 @@ main {
     #main-tile nav {
         margin: 0;
     }
-    .tile div {
-        width: 100%;
+    .tile container div {
+        width: 46%;
     }
     #contact-info div {
         width: 55%;
