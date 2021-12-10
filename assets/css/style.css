@@ -37,11 +37,6 @@ header h1 {
     font-size: 60px;
     height: fit-content;
     border-radius: var(--round-border);
-    
-}
-header a {
-    text-decoration: none;
-    color: var(--white);
 }
 header nav ul {
     list-style: none;
@@ -54,6 +49,10 @@ header nav ul li {
     font-size: 1.55vw;
     border-bottom: 3px solid var(--white);
     margin: 0 10px;
+}
+header a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 /* format hero image and webpage cool subtitle  */
@@ -85,27 +84,19 @@ header nav ul li {
     padding: 5px 10px;
 }
 
+/*main content/large container class format  */
 main {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--white);
     color: var(--green);
 }
-
 .body-section {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin: 30px;
 }
-
-#about-me div {
-    width: 75%;
-    height: fit-content;
-    padding: 10px 25px;
-    font-weight: bold;
-}
-
 .section-title {
     font-size: 4vw;
     text-align: right;
@@ -114,6 +105,15 @@ main {
     padding: 0 10px;
 }
 
+/* about me paragraphs  */
+#about-me div {
+    width: 75%;
+    height: fit-content;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+/* my work section formatting  */
 #my-work {
     height: 70%;
 }
@@ -185,6 +185,7 @@ main {
     margin-top: 10px;
 }
 
+/* format contact info section  */
 #contact-info div {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +193,6 @@ main {
     align-items: center;
     width: 75%;
 }
-
 #contact-info div a {
         border-bottom: 5px solid var(--green);
         text-decoration: none;
@@ -204,6 +204,7 @@ main {
 /* media queries for screen less than 1800px */
 
 @media screen and (max-width: 1799px) {
+    /* less than 1799px  */
     header h1 {
         font-size: 3.75vw;
     }
@@ -216,13 +217,14 @@ main {
 }
 
 @media screen and (max-width: 1288px) {
+    /* less than 1288px  */
     .tile container div {
         width: 47.5%;
     }
 }
 
 @media screen and (max-width: 980px) {
-    /* less than 768px  */
+    /* less than 980px  */
     header{
         justify-content: center;
         height: fit-content;
@@ -239,6 +241,7 @@ main {
     header nav ul li {
         font-size: 3vw;
     }
+
     .hero img {
         display: block;
         position: static;
@@ -251,6 +254,7 @@ main {
         left: 25%;
         font-size: 4vw;
     }
+
     main {
         justify-content: center;
     }
@@ -270,18 +274,7 @@ main {
         text-align: justify;
         font-size: 2.25vw;
     }
-    .project-tiles nav {
-        position: absolute;
-        margin: 0;
-        display: block;
-        background-color: var(--wood);
-        height: fit-content;
-        width: fit-content;
-        padding: 10px;   
-        line-height: 15px; 
-        color: var(--white);
-        border-radius: 0 var(--round-border) var(--round-border) 0;
-    }
+
     #main-tile {
         height: 300px;
     }
@@ -294,7 +287,16 @@ main {
     #contact-info div {
         width: 55%;
     }
-    #contact-info div a {
-        margin: 10px;
+    .project-tiles nav {
+        position: absolute;
+        margin: 0;
+        display: block;
+        background-color: var(--wood);
+        height: fit-content;
+        width: fit-content;
+        padding: 10px;   
+        line-height: 15px; 
+        color: var(--white);
+        border-radius: 0 var(--round-border) var(--round-border) 0;
     }
 }

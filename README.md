@@ -33,13 +33,10 @@ This challenge/project is meant to set myself up for future success by applying 
 Sketching out a design and accepting that the design will change as you go is important. Late in the development of this page I needed to add two container elements to the four same size project tiles in order to keep the outer tile borders in line with the larger tile at different pixel widths. That affected my CSS layout and media queries, but saved me a lot of lines of code and will be viewed much more cleanly on devices of all sizes, while still staying true to the mock up.
 
 ## **What makes this project stand out?**
-This project is special because of the media queries. It should be easy to navigate and appear clean and professional on all devices from the smallest smart phones to large monitors. If, for whatever reason, someone were to want to view it on a tv, one short media query could be added.
+This project is special because of the media queries. In general, the media queries are perfect from 553px to 4000px. I've viewed it on my smartphone and it looks decent. I lose the wood background image in the header and hero, the .tile class margins need to be fixed for smartphones, and the pdf resume link needs media queries and the ability to access page 2.
 
 ## **Screenshot**
-<!-- change these -->
-![Screenshot of the web application](./assets/images/portfolio-mock-up-1.png)
-![Screenshot of the web application](./assets/images/portfolio-mock-up-2.png)
-![Screenshot of the web application](./assets/images/portfolio-mock-up-3.png)
+![GIF-of-portfolio](./assets/images/portfolio-gif.gif)
 
 ### Credits
 * The office image in the hero is from https://potsplantersandmore.com/blog/5-business-boosting-benefits-of-plants-in-the-office/
