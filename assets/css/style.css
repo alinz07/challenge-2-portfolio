@@ -146,7 +146,7 @@ main {
 }
 .tile div{
     height: 150px;
-    width: 48.5%;
+    width: 48.4%;
     border: 5px solid var(--wood);
     margin: 10px;
     position: relative;
@@ -193,9 +193,18 @@ main {
     .hero p {
         font-size: 2.75vw;
     }
+    .tile div {
+        width: 47.8%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1324px) {
+    .tile div {
+        width: 46.9%;
+    }
+}
+
+@media screen and (max-width: 980px) {
     /* less than 768px  */
     header{
         justify-content: center;
