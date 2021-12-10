@@ -3,22 +3,25 @@
 ## **Link** to web application: https://alinz07.github.io/challenge-2-portfolio/
 ## **Link** to project repository: https://github.com/alinz07/challenge-2-portfolio.git
 
-<!-- start here  -->
 ## **What and Why**
-This project refactors the html and css code for Horiseon's home page in order to improve accessibility so that the website is optimized for search engines.
-## Criteria
-GIVEN a webpage meets accessibility standards </br>
-* WHEN I view the source code
-* THEN I find semantic HTML elements </br>
-* WHEN I view the structure of the HTML elements
-* THEN I find that the elements follow a logical structure independent of styling and positioning</br>
-* WHEN I view the image elements
-* THEN I find accessible alt attributes</br>
-* WHEN I view the heading attributes
-* THEN they fall in sequential order</br>
-* WHEN I view the title element
-* THEN I find a concise, descriptive title
+The purpose of this projects is to create my deployed portfolio so that hiring managers can review samples of my work and assess if my knowledge and skills are a good fit for the position. I expect the purpose of this project to evolve with my portfolio. This projects uses strictly html and advanced css.
+## Challenge Criteria
 
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+<!-- start here  -->
 ## **How and Why**
 * Comments, semantic elements and alt text were added to improve accessibility. This will increase the potential consumer base, improve code readability, improve the websites position in search engine results (SEO) and help avoid accessibility lawsuits.
 * In order to clean up the code, html classes were modified to consolidate CSS rules and some CSS rules were removed.
