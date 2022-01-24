@@ -143,6 +143,9 @@ main {
     margin: 290px 0 20px 0;
     position: absolute;
 }
+#main-tile-h3, #main-tile-h4 {
+    font-size: large;
+}
 .tile {
     width: 100%;
     height: fit-content;
@@ -172,16 +175,15 @@ main {
     position: absolute;
     display: block;
     background-color: var(--wood);
-    height: 80px;
+    height: fit-content;
     width: fit-content;
-    margin: 40px 0 20px 0;
-    padding: 10px;   
-    line-height: 15px; 
+    margin: 85px 0 10px 0;
+    padding: 3px;   
     color: var(--white);
     border-radius: 0 var(--round-border) var(--round-border) 0;
 }
-.project-tiles nav h3 {
-    font-size: 25px;
+.project-tiles nav h3, .project-tiles nav h4 {
+    font-size: xx-small;
     margin-top: 10px;
 }
 
@@ -298,5 +300,26 @@ main {
         line-height: 15px; 
         color: var(--white);
         border-radius: 0 var(--round-border) var(--round-border) 0;
+    }
+}
+
+@media screen and (max-width: 552px) {
+
+    .body-section p {
+        font-size: large;
+        text-align: -webkit-auto;
+    }
+
+    .tile-container, .tile container div {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    #main-tile {
+        margin: auto;
+    }
+
+    .left-tiles > nav {
+        width: fit-content;
     }
 }
